@@ -208,3 +208,23 @@ main > section{
 .countries .price{
     font-size: .8rem;
 }
+.footer {
+    border-top: 1px solid #dbdbdb;
+    padding: 3rem 0;
+}
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+.nav-footer .menu{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, auto);
+    grid-row-gap: 1rem;
+}
+.nav-footer .menu a{
+    color: var(--dark);
+    text-decoration: none;
+    display: block;
+    /* padding-top: .5rem; */
+}
