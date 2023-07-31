@@ -173,6 +173,19 @@ main > section{
 .card img{
     width: 100%;
 }
+.card .category{
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.card .title {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin: 0;
+}
+.card .price{
+    font-style: .9rem;
+}
 .countries .cards-container{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -187,11 +200,11 @@ main > section{
     color: var(--light);
     text-align: center;
 }
-.countries .info .title{
+.countries .title{
     font-size: 1.4rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 0;
 }
-.countries .info .price{
+.countries .price{
     font-size: .8rem;
 }
