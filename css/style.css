@@ -208,6 +208,16 @@ main > section{
 .countries .price{
     font-size: .8rem;
 }
+
+.footerBtn{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: .5rem 2rem;
+    background-color: var(--light);
+    color: var(--dark);
+    text-decoration: none;
+}
 .footer {
     border-top: 1px solid #dbdbdb;
     padding: 3rem 0;
@@ -238,4 +248,37 @@ main > section{
     padding: .2rem .4rem .4rem .4rem;
     color: var(--light);
     border-radius: 5px;
+}
+
+.social-nav{
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, 30px); */
+    justify-content: flex-end;
+    /* grid-column-gap: 1rem; */
+
+}
+.social-nav a{
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.social-nav a:last-of-type{
+    margin-right: 0;
+    
+}
+.social-nav a::before{
+    font-family: "Font Awesome 5 Brands";
+    color: var(--dark);
+    font-size: 1.8rem;
+}
+.social-nav a[href*='facebook.com']::before{
+    content: '\f39e';
+}
+.social-nav a[href*='twitter.com']::before{
+    content: '\f099';
+}
+.social-nav a[href*='instagram.com']::before{
+    content: '\f16d';
+}
+.social-nav a span{
+    display: none;
 }
